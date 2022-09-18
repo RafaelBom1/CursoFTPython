@@ -4,10 +4,13 @@
 
 ### Atualmente sou Assesssor Técnico de Inteligência de Mercado da CNA
 
-### Meus interesses:
+#### Meus interesses:
 - Economia
 - Análise de Dados
 - Inteligência de Mercado
 - Pesquisas
 - Projetos
 
+#### Meu LinkedIn:
+
+[LinkedIn](https://www.linkedin.com/in/rafaelcbomfim/)
