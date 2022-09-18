@@ -1,0 +1,13 @@
+iframe {
+    width: 100%;    
+    height: 300px;
+}
+
+.duascolunas {
+    display: block;
+    float: left;    
+    width: 50%;
+    padding: 10px;   
+    border: 1px solid var(--marromclaro);
+    
+}

@@ -1,0 +1,85 @@
+table {
+
+	border: 2px solid var(--azul);
+	background: var(--marromclaro);
+	width: 100%;	
+	border-collapse: collapse; /*para unir as bordas*/
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+table thead {
+	background-color: var(--azul);
+	color: #fff;	
+}
+
+table tbody {
+	font-weight: 400;	
+}
+
+table tr {
+	border: 1px solid var(--azul);
+	height: 40px;
+}
+
+table tbody tr:nth-child(even) { /*mudar a cor de fundo das linhas pares ("even") ou "odd" para ímpares*/
+	background-color: var(--branco);
+}
+
+table tbody tr:hover {
+	background-color: var(--azul); /*mudar a cor da linha ao passar o mouse por cima*/
+}
+
+table tbody td:hover {
+	font-size: 1.8rem;	
+	text-shadow: 0.1rem 0.1rem var(--azul);
+}
+
+table th,
+table td {
+	padding: 1rem;
+	font-size: 1.6rem;
+	text-align: right;
+	vertical-align: middle; /*centralizar os dados no meio da linha*/	
+}
+
+table thead th {
+	text-align: center;
+}
+
+table tr td:first-child {
+	text-align: left;
+	font-weight: 600;
+	background-color: var(--azul);
+	color: #fff;
+	width: 20%;
+}
+
+
+.table-container {
+	padding: 2rem 1rem;
+}
+
+.table-container h3 {
+	font-size: 2rem;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.table-container tfoot {
+	background: var(--marrom);
+	height: 60px;	
+}
+
+table tfoot tr:hover {
+	background-color: var(--azul);
+	color: var(--branco);
+}
+
+.table-container tfoot td {
+	font-weight: 900;
+	
+}
+
+.table-container tfoot td:hover {
+	font-size: 2rem;		
+}

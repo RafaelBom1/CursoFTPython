@@ -1,0 +1,264 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+/* Importando CSS de Tabelas */
+@import url('tabela.css');
+/*Criei outro arquivo de CSS para a tabela*/
+
+/* Importando CSS de Filtros */
+@import url('filtros.css');
+
+/* Importando CSS de Frames */
+@import url('frames.css');
+
+/* Importando CSS de layout */
+@import url('layout.css');
+
+/*Fonte Ubuntu*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --branco: #FFFDFA;
+  --marrom: #8A7C6B;
+  --marromclaro: #D7CBBD;
+  --azul: #5E7D8A;
+  --azulclaro: #BCCFD6;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 62.5%; /* equivalente a 10px */
+}
+
+header {      
+  height: 80px;    
+  border-bottom: var(--marromclaro) solid 3px; 
+  background-image: url(https://img.freepik.com/free-vector/bauhaus-background-brown-earth-tone-vector-wallpaper_53876-135998.jpg);  
+  background-repeat: repeat-y;   
+  background-repeat: repeat-x;
+  transition: 0.7s;
+}
+
+header:hover {
+  background-image: url(https://img.freepik.com/premium-vector/knit-seamless-pattern_171739-201.jpg);
+}
+
+header h1 {
+  text-align: center;
+  padding-top: 15px;
+  color: var(--azul); 
+  text-shadow: 3px 0px var(--branco); 
+  font-size: 4rem;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+header:hover h1 {
+  text-shadow: 0px 3px var(--branco);
+  color: var(--marromclaro);
+}
+
+header img {
+  width: 50px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 50%;
+  transition: 0.5s;
+}
+
+header img:hover {
+  opacity: 100%;
+}
+
+body {
+  background-color: var(--marrom);
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--branco);
+}
+
+h2, h3 {
+  font-size: 2rem;
+  color: var(--branco);
+  padding: 5px 5px 15px 5px;
+  height: 3rem;
+}
+
+p, li {      
+  color: var(--branco);
+  padding: 0 0 10px 0;
+  font-size: 1.6rem; /* equivalente a 16px */
+  text-align: justify;
+}
+
+a {
+  color: var(--azulclaro);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--marromclaro);
+  font-weight: bolder;  
+}
+
+aside p {
+  color: var(--azulclaro);
+  font-size: 12px;  
+}
+
+.artigo {
+  padding: 20px 0 20px 0;
+  border-bottom: var(--marromclaro) solid 1px;
+}
+
+.artigo p {
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+.artigo img {
+  width: 50%;
+  position: relative;
+  display: block;
+  border: var(--azul) solid 3px;
+  padding: 1px;   
+  margin: auto;
+  border-radius: 10px;
+}
+  
+ul {
+  font-size: 20px;
+}
+
+ul li {
+  font-size: 1.6rem; /* equivalente a 16px */
+  width: 100%;
+  height: 3rem; /* equivalente a 30px */  
+}
+
+nav {
+  float: left;
+  width: 25%;
+  padding: 5px;    
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+#primeiro-link > a {
+  color: var(--branco);  
+}
+
+.navegacao {
+    padding-bottom: 15px;
+}
+
+.navegacao li {
+  border-bottom: 1px solid var(--marromclaro);
+  display: block;
+  padding: 1rem 1rem 2rem 1rem;
+  line-height: 1.2rem;
+}
+
+.navegacao a {
+  color: var(--azulclaro);
+  display: block;
+  margin-bottom: .5rem;
+  width: 100%;
+} 
+
+.navegacao a:hover {
+  color: #fff;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 75%; /*Pois o nav está com 25%*/
+  border-left: var(--marromclaro) solid 3px;
+}
+
+article h1, h2, h3 {
+  text-align: center;
+  color: #fff;
+}
+
+article h3 {
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+article picture img {
+  position: relative;
+  display: block; 
+  margin: auto;
+  width: 50%;  
+}
+
+#aboutme img {
+  width: 200px;
+  position: relative;
+  display: block;
+  border: var(--azul) solid 3px;
+  padding: 1px;   
+  margin: auto;
+  border-radius: 50%;
+  opacity: 70%;
+  transition: 0.5s;
+}
+
+#aboutme img:hover {
+  opacity: 100%;
+  border-radius: 10px;  
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: var(--azul);
+  padding: 0px;  
+  border-top: var(--marromclaro) solid 3px;  
+}
+
+footer p {
+  position: relative;
+  text-align: center;
+  color: var(--azul);
+  font-weight: 400;
+  top: 50%;
+  transition: 1s;
+}
+
+footer:hover p {
+  font-size: 50px;
+  top: 35%
+}
+
+.background {
+  background-image: url(https://img.freepik.com/free-vector/bauhaus-background-brown-earth-tone-vector-wallpaper_53876-135998.jpg);
+  width: 100%;
+  height: 30vh;
+  background-repeat: repeat-y;   
+  background-repeat: repeat-x;        
+}
+
+
+

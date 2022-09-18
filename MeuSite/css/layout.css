@@ -1,0 +1,46 @@
+/*Web Design Responsivo*/
+/*Mobile Firts*/
+
+/*Como o CSS padrão foi feito pensando no Desktop, não precisa criar uma @media para ele*/
+
+
+@media (min-width: 769px) {
+
+    .coluna {
+        background-color: var(--marrom);
+    }
+
+}
+
+/*Tablet*/
+/*Mudar layout para aparelhos com largura de tela a partir de 768px ou menor*/
+
+@media (max-width: 768px) {
+
+    nav {
+        width: 30%; /*ou 30vw*/
+    }
+
+    article {
+        width: 70%; /*ou 70vw*/
+    }
+
+    .coluna {
+        width: 50%; /*ou 50vw*/
+    }
+
+}
+
+
+/*Mudar layout para smartphones com largura de tela a partir de 425px ou menor*/
+/*Tablet*/
+@media (max-width: 425px) {
+   
+    nav,
+    article, 
+    .coluna {
+        width: 100%; /*As 2 ou 3 colunas viram apenas 1*/
+        min-width: 320px; /*Para de fazer o ajuste ao tamanho da tela e ativa a barra de rolagem horizontal*/
+    }  
+
+}

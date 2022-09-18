@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Imagem</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">				
+		<!-- Estilos Personalizados -->
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	</head>
+	<body>
+
+		<header>
+			<h1>Exercício do Módulo 9</h1>.			
+			<img src="https://cdn-icons-png.flaticon.com/512/5515/5515964.png" alt="logo">
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Páginas</h3>
+				<ul class="navegacao">
+					<li id="primeiro-link"><a href="index.html">Home</a></li>					
+					<li><a href="artigos.html">Artigos</a></li>
+					<li><a href="tabela.html">Tabela</a></li>
+					<li><a href="imagem.html">Imagem</a></li>
+                    <li><a href="contato.html">Fale Comigo</a></li>
+					<li><a href="filtros.html">Filtros</a></li>		
+					<li><a href="https://ebaconline.com.br/" target="_blank">EBAC (link externo)</a></li>	
+					<li><a href="frames.html">Frames</a></li>				
+				</ul>
+				
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li class="navegacao"><a href="https://www.linkedin.com/in/rafaelcbomfim/" target="_blank">LinkedIn</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				
+				<h2>Imagem que se ajusta ao tamanho da tela</h2>
+
+				<picture>
+                    <source media="(min-width: 280px)" srcset="imagens/horse-color-small.png">
+                    <source media="(min-width: 600px)" srcset="imagens/horse-color-medium.png">
+                    <img srcset="imagens/horse-color-big.png" alt="cavalo">
+                </picture>				
+
+			</article>
+
+
+		</section>
+
+		<footer>			
+			<div class="background">
+				<p>Desenvolvido por Rafael Bomfim</p>
+			</div>
+		</footer>
+		
+	</body>
+</html>

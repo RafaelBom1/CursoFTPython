@@ -1,0 +1,55 @@
+form div {
+    margin: 10px;
+    margin-bottom: 5px;
+    padding: 10px;    
+    border: 1px solid var(--marromclaro);
+    border-radius: 5px;   
+}
+
+label {
+    margin-bottom: 2rem; 
+    font-size: 1.5rem;    
+    font-weight: 600;
+    color: var(--azulclaro);    
+}
+
+select {
+    background-color: var(--marromclaro); 
+    border: solid var(--azul) 1px;
+    color: var(--azul);
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 25px;
+}
+
+[type="text"], [type="email"], textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: var(--marromclaro);
+    color: #000;
+    border: solid var(--azul) 1px;
+    border-radius: 5px;    
+}
+
+.submit {
+    position: relative;
+    border: none;
+    text-align: center;    
+}
+
+input {
+    padding: 0.5rem;
+    position: relative;
+    margin: auto;
+    background-color: var(--azul); 
+    border: solid var(--marromclaro) 2px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+input:hover {
+    background-color: var(--azulclaro);
+    font-weight: bolder;
+}
