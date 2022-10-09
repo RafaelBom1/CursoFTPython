@@ -43,8 +43,12 @@ Fluxo do Git
 ### Branchs
 são ramificações / versões paralelas
 
-- main / master (vai para produção, quando o projeto é publicado)
-- develop 
+- Branch main / master (vai para produção, quando o projeto é publicado)
+Enviamos para a main apenas os códigos encerrados e testados, consolidados
+
+- Branch develop 
+Ambiente separado apenas para desenvolvimento, testes
+
 - DOD Definition of Done: critérios de aceite
 - versionamento 1.0.0
 
@@ -67,3 +71,10 @@ O respositório resolve os conflitos automaticamente
 ### configura o GitFlow
 > git flow init
 > git flow feature start {nome-da-feature}
+<<<<<<< Updated upstream
+=======
+
+#### Testando atualização e commit
+Vamos ver se consegui
+
+>>>>>>> Stashed changes
