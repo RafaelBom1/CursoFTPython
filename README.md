@@ -71,6 +71,7 @@ O respositório resolve os conflitos automaticamente
 ### configura o GitFlow
 > git flow init
 > git flow feature start {nome-da-feature}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 
@@ -78,3 +79,8 @@ O respositório resolve os conflitos automaticamente
 Vamos ver se consegui
 
 >>>>>>> Stashed changes
+=======
+
+#### Testando atualização e commit
+Vamos ver se consegui
+>>>>>>> main
